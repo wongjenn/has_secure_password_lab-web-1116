@@ -1,0 +1,14 @@
+<h1>Create User Login</h1>
+
+<%= form_for login_path do |f| %>
+  <p><%=f.label :name %>
+  <%=f.text_field :name, required: true%></p>
+
+  <p><%=f.label :password %>
+  <%=f.password_field :password, required: true%></p>
+
+  <p><%=f.label :password_confirmation %>
+  <%=f.password_field :password_confirmation, required: true%></p>
+
+  <%= f.submit %>
+<% end %>

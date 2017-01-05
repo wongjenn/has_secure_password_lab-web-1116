@@ -1,0 +1,12 @@
+<h1>Login</h1>
+
+<%= flash.notice %>
+
+<%= form_for sessions_index_path |f| do%>
+<p><%= f.label :name %>
+<%= f.text_field :name %></p>
+<p><%= f.label :password %>
+<%= f.password_field_tag :password %></p>
+
+<%= submit_tag  %>
+<% end %>
